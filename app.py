@@ -249,7 +249,7 @@ st.subheader("Linear Regression Coefficients")
 st.dataframe(cdf)
 
 # Optional: Bar plot of coefficients
-st.subheader("Coefficient Magnitudes")
+
 
 
 fig = px.scatter(new_data,
