@@ -520,7 +520,6 @@ fig, ax = plt.subplots()
 sns.heatmap(conf_mat, annot=True, fmt='d', cmap='YlGnBu', xticklabels=['Low', 'High'], yticklabels=['Low', 'High'], ax=ax)
 ax.set_xlabel("Predicted")
 ax.set_ylabel("Actual")
-st.pyplot(fig)
 
 import plotly.figure_factory as ff
 
@@ -574,14 +573,8 @@ fig = ff.create_annotated_heatmap(
     colorscale='Viridis'
 )
 
-st.plotly_chart(fig)
-fig.update_layout(
-    title_text='📉 Confusion Matrix',
-    xaxis=dict(title='Predicted'),
-    yaxis=dict(title='Actual')
-)
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True, key='confusion_matrix')
 
 # --- Class Distribution Bar Chart (Actual vs Predicted) ---
 
