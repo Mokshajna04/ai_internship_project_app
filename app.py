@@ -250,7 +250,7 @@ st.dataframe(cdf)
 
 # Optional: Bar plot of coefficients
 st.subheader("Coefficient Magnitudes")
-st.bar_chart(cdf)
+
 
 fig = px.scatter(new_data,
                  x='Mental_Health_Score',
