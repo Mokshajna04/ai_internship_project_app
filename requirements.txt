@@ -1,9 +1,9 @@
 streamlit
-numpy==1.23.5
+numpy
 pandas
 seaborn
 matplotlib
-plotly==5.19.0
+plotly
 scikit-learn
 statsmodels
-scipy==1.9.3
+scipy
